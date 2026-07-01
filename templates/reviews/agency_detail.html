@@ -1,0 +1,15 @@
+{% extends "accounts/user_dashboard.html"%}
+
+{% block content %}
+<div class="agency-detail">
+    <h2><a href="">{{ agency.agency_name }}</a></h2>
+    <p>Overall Sentiment: {{ agency.get_overall_sentiment }}</p>
+    {% for review in agency.reviews.all %}
+    <div class="review-frame">
+        <p>{{ review.user.username }}</p>
+        <p>Rating: {{review.review_rating}}</p>
+        <p>{{ review.review_text }}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

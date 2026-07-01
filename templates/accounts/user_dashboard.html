@@ -1,0 +1,13 @@
+{% extends "accounts/base_dashboard.html"%}
+
+{% block title %}User Dashboard{% endblock title %}
+
+{% block sidebar_links %}
+    <p> {{ user.username }}</p>
+    <a href="{% url 'dashboard' %}">Home</a>
+    <a href="#">My Reviews</a>
+{% endblock sidebar_links %}
+
+{% block content %}
+    {% include "reviews/agency_list.html" %}
+{% endblock content %}

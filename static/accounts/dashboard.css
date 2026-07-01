@@ -1,0 +1,77 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    background-color: #e0ddcf;
+    margin: 0;
+    overflow: hidden;
+}
+
+.sidebar {
+    height: 100vh;
+    width: 250px;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: block;
+    padding-top: 20px;
+}
+
+.sidebar a:hover {
+    color: orange;
+}
+
+#logout {
+    margin-top: auto;
+}
+#logout button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+#logout button:hover {
+    color: orange;
+}
+
+.main-content {
+    position: absolute;
+    left: 250px;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    padding-left: 40px;
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+.agency-card {
+    display: block;
+    width: 95%;
+    padding: 20px;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    background-color: white;
+}
+
+.agency-detail {
+    padding-left: 20px;
+}

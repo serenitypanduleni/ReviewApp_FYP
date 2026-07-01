@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dashboard{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'accounts/dashboard.css' %}">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>WELCOME</h2>
+        {% block sidebar_links %}
+        {% endblock sidebar_links %}
+        <form action="{% url 'logout' %}" method="POST" id="logout">
+            {% csrf_token %}
+            <button>LOGOUT</button>
+        </form>
+
+    </div>
+    <div class="main-content">
+       {% block content %}
+       {% endblock content %}
+    </div>
+</body>
+</html>

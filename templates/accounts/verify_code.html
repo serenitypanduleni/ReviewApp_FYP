@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'accounts/base.css' %}">
+</head>
+<body>
+    <div class="outer-frame">
+        <div class="left-frame">
+            <h1>Welcom to REVIEWapp</h1>
+            <h2>this app is designed as </h2>
+        </div>
+        <div class="right-frame">
+            <h1>Please enter the 6 digit code</h1>
+            <form method="POST">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <p><input type="submit" value="Submit"></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

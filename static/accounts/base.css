@@ -1,0 +1,63 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e0ddcf;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+a {
+    color: blue;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.outer-frame {
+    height: 100vh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+
+.left-frame {
+    flex: 1;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.right-frame {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+
+form p {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 10px;
+}
+
+input {
+    height: 30px;
+}
+
+.helptext {
+    float: left;
+    color: grey;
+    clear: both;
+    float: left;
+    font-size: 10px;
+}

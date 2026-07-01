@@ -1,0 +1,9 @@
+
+{% for agency in agency_list %}
+<div class="agency-card">
+    <h2><a href="{% url 'agency_detail' agency.id %}">{{ agency.agency_name }}</a></h2>
+    <p>Overall Sentiment: {{ agency.get_overall_sentiment }}</p>
+    <p>{{ agency.description }}</p>
+    <a href="{% url 'create_review' agency.id %}">Add Review</button></a>
+</div>
+{% endfor %}
