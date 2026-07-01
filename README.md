@@ -32,12 +32,15 @@ Django Documentation - https://docs.djangoproject.com/en/6.0/
 `pip install -r requirements.txt`
 
 4. Run the migrations 
-`python manage.py migrate`
+`python3 manage.py migrate`
 
 5. Create a superuser
-`python manage.py createsuperuser`
+`python3 manage.py createsuperuser`
 
-6. Run the server
-`python manage.py runserver`
+5. Load the json data into the appliaction
+`python3 manage.py loaddata appdata.json`
+
+7. Run the server
+`python3 manage.py runserver`
 
 
