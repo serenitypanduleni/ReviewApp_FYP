@@ -1,0 +1,183 @@
+[
+{
+  "model": "accounts.usermodel",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$74I76CBJXffei5OFL9A3Gk$+801jawTdErKP0FL5K6VhuMc9unC0sOhi0bhW3fHSPs=",
+    "last_login": "2026-07-01T22:41:26.577Z",
+    "is_superuser": true,
+    "username": "superuser",
+    "first_name": "",
+    "last_name": "",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2026-04-27T07:33:08.619Z",
+    "email": "exampleemail@gmail.com",
+    "phone_number": "",
+    "is_number_verified": false,
+    "user_role": "user",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usermodel",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$720000$gGky2nK6dRe3QUOCyiOtp0$4uhdeH44Os0cK1tTRtaP2pUiS/1jwQgPlBgb+cViU0E=",
+    "last_login": "2026-07-01T05:37:27.480Z",
+    "is_superuser": false,
+    "username": "nnn",
+    "first_name": "nnn",
+    "last_name": "nnnn",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-06-29T17:02:36.137Z",
+    "email": "nnn@gmail.com",
+    "phone_number": "+447901090749",
+    "is_number_verified": true,
+    "user_role": "user",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usermodel",
+  "pk": 5,
+  "fields": {
+    "password": "passwordUser1@",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "User1",
+    "first_name": "User",
+    "last_name": "One",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-07-01T07:03:39Z",
+    "email": "userone@gmail.com",
+    "phone_number": "+447234567891",
+    "is_number_verified": false,
+    "user_role": "user",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "accounts.usermodel",
+  "pk": 6,
+  "fields": {
+    "password": "passwordUser2@",
+    "last_login": null,
+    "is_superuser": false,
+    "username": "UserTwo",
+    "first_name": "User",
+    "last_name": "Two",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2026-07-01T07:06:04Z",
+    "email": "usertwo@gmail.com",
+    "phone_number": "+447234567892",
+    "is_number_verified": false,
+    "user_role": "user",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "reviews.agency",
+  "pk": 1,
+  "fields": {
+    "agency_name": "TRG Recruitment",
+    "description": "Located in Sheffield, with a focus on part time and full time positions at local warehouses"
+  }
+},
+{
+  "model": "reviews.agency",
+  "pk": 2,
+  "fields": {
+    "agency_name": "Local Recruits",
+    "description": "Local Recruits is a recruitment agency based in London. We offer part and full time warehouse operative roles. With an extensive ranges of shifts to fit your schedule. Located in Manchester."
+  }
+},
+{
+  "model": "reviews.agency",
+  "pk": 3,
+  "fields": {
+    "agency_name": "RecruitMe",
+    "description": "RecruitMe is a recruitment agency based in London, they offer a variety of shifts on fixed term contracts for those seeking warehouse associate jobs within the area."
+  }
+},
+{
+  "model": "reviews.agency",
+  "pk": 4,
+  "fields": {
+    "agency_name": "WarehouseRoute",
+    "description": "WarehouseRoute is a recruitment agency based in Bristol. They offer a range of contracts to suit specific needs such as night shift roles."
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 9,
+  "fields": {
+    "agency": 1,
+    "user": 1,
+    "review_text": "This place is amazing I tell you, you get paid a lot and the conditions are great but this isn't all everyone is super friendly and its great. I couldn't advocate fr them more. they are amazing",
+    "review_rating": 1,
+    "predicted_sentiment": "positive",
+    "is_flagged": true,
+    "created_at": "2026-04-28T15:12:09.265Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 10,
+  "fields": {
+    "agency": 1,
+    "user": 1,
+    "review_text": "it was an amazing experience absolutely terrific I cannot fathom go wit could have been any better \r\none tow",
+    "review_rating": 5,
+    "predicted_sentiment": "positive",
+    "is_flagged": false,
+    "created_at": "2026-06-29T11:51:47.759Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 13,
+  "fields": {
+    "agency": 2,
+    "user": 6,
+    "review_text": "It has been difficult getting my cv recognised the amount of applicants that usually apply but going through Local Recruits helped me get my foot in the door with employers. Their response has been quick and helfpul when I had any queries regarding the jobs available",
+    "review_rating": 5,
+    "predicted_sentiment": "positive",
+    "is_flagged": false,
+    "created_at": "2026-07-01T07:11:57.910Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 14,
+  "fields": {
+    "agency": 2,
+    "user": 5,
+    "review_text": "This company has not been the best to work with but the pay was great. The hours were really good too.",
+    "review_rating": 2,
+    "predicted_sentiment": "positive",
+    "is_flagged": true,
+    "created_at": "2026-07-01T07:14:02.316Z"
+  }
+},
+{
+  "model": "reviews.review",
+  "pk": 15,
+  "fields": {
+    "agency": 3,
+    "user": 6,
+    "review_text": "Had the worst experience with recruitme, they don't respond to emails or calls regarding contracts and have been late on payments multiple time. Definitely wouldn't recommend.",
+    "review_rating": 2,
+    "predicted_sentiment": "negative",
+    "is_flagged": false,
+    "created_at": "2026-07-01T07:15:57.367Z"
+  }
+}
+]
